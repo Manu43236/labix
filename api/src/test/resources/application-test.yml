@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:labix_test;DB_CLOSE_DELAY=-1;MODE=MySQL;NON_KEYWORDS=USER
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: false
+  flyway:
+    enabled: false
+
+app:
+  jwt:
+    secret: test-secret-key-that-is-long-enough-32ch
+    access-expiry-ms: 900000
+    refresh-expiry-ms: 604800000

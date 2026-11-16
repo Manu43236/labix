@@ -1,0 +1,274 @@
+{
+  "tests": [
+    {
+      "code": "CBC",
+      "name": "Complete Blood Count",
+      "category": "Haematology",
+      "sampleType": "Blood-EDTA",
+      "tatHours": 2,
+      "parameters": [
+        {"name": "Haemoglobin", "unit": "g/dL", "valueType": "NUMBER", "decimals": 1, "sortOrder": 1},
+        {"name": "RBC Count", "unit": "million/μL", "valueType": "NUMBER", "decimals": 2, "sortOrder": 2},
+        {"name": "WBC Count (TLC)", "unit": "cells/μL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 3},
+        {"name": "Platelets", "unit": "lakh/μL", "valueType": "NUMBER", "decimals": 1, "sortOrder": 4},
+        {"name": "Haematocrit (PCV)", "unit": "%", "valueType": "NUMBER", "decimals": 1, "sortOrder": 5},
+        {"name": "MCV", "unit": "fL", "valueType": "NUMBER", "decimals": 1, "sortOrder": 6},
+        {"name": "MCH", "unit": "pg", "valueType": "NUMBER", "decimals": 1, "sortOrder": 7},
+        {"name": "MCHC", "unit": "g/dL", "valueType": "NUMBER", "decimals": 1, "sortOrder": 8},
+        {"name": "Neutrophils", "unit": "%", "valueType": "NUMBER", "decimals": 1, "sortOrder": 9},
+        {"name": "Lymphocytes", "unit": "%", "valueType": "NUMBER", "decimals": 1, "sortOrder": 10},
+        {"name": "Monocytes", "unit": "%", "valueType": "NUMBER", "decimals": 1, "sortOrder": 11},
+        {"name": "Eosinophils", "unit": "%", "valueType": "NUMBER", "decimals": 1, "sortOrder": 12}
+      ]
+    },
+    {
+      "code": "ESR",
+      "name": "Erythrocyte Sedimentation Rate",
+      "category": "Haematology",
+      "sampleType": "Blood-EDTA",
+      "tatHours": 2,
+      "parameters": [
+        {"name": "ESR (1 hour)", "unit": "mm/hr", "valueType": "NUMBER", "decimals": 0, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "BG_RH",
+      "name": "Blood Group and Rh Factor",
+      "category": "Haematology",
+      "sampleType": "Blood-EDTA",
+      "tatHours": 1,
+      "parameters": [
+        {"name": "Blood Group", "unit": "", "valueType": "CHOICE", "choices": ["A", "B", "AB", "O"], "decimals": 0, "sortOrder": 1},
+        {"name": "Rh Factor", "unit": "", "valueType": "CHOICE", "choices": ["Positive", "Negative"], "decimals": 0, "sortOrder": 2}
+      ]
+    },
+    {
+      "code": "FBS",
+      "name": "Fasting Blood Sugar",
+      "category": "Biochemistry",
+      "sampleType": "Blood-Fluoride",
+      "tatHours": 2,
+      "parameters": [
+        {"name": "Blood Glucose (Fasting)", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "PPBS",
+      "name": "Post-Prandial Blood Sugar",
+      "category": "Biochemistry",
+      "sampleType": "Blood-Fluoride",
+      "tatHours": 2,
+      "parameters": [
+        {"name": "Blood Glucose (Post-Prandial)", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "RBS",
+      "name": "Random Blood Sugar",
+      "category": "Biochemistry",
+      "sampleType": "Blood-Fluoride",
+      "tatHours": 1,
+      "parameters": [
+        {"name": "Blood Glucose (Random)", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "HBA1C",
+      "name": "HbA1c (Glycated Haemoglobin)",
+      "category": "Biochemistry",
+      "sampleType": "Blood-EDTA",
+      "tatHours": 4,
+      "parameters": [
+        {"name": "HbA1c", "unit": "%", "valueType": "NUMBER", "decimals": 1, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "LIPID",
+      "name": "Lipid Profile",
+      "category": "Biochemistry",
+      "sampleType": "Blood-Serum",
+      "tatHours": 4,
+      "parameters": [
+        {"name": "Total Cholesterol", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 1},
+        {"name": "HDL Cholesterol", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 2},
+        {"name": "LDL Cholesterol", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 3},
+        {"name": "VLDL Cholesterol", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 4},
+        {"name": "Triglycerides", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 5}
+      ]
+    },
+    {
+      "code": "LFT",
+      "name": "Liver Function Tests",
+      "category": "Biochemistry",
+      "sampleType": "Blood-Serum",
+      "tatHours": 4,
+      "parameters": [
+        {"name": "Total Bilirubin", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 2, "sortOrder": 1},
+        {"name": "Direct Bilirubin", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 2, "sortOrder": 2},
+        {"name": "Indirect Bilirubin", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 2, "sortOrder": 3},
+        {"name": "SGOT (AST)", "unit": "U/L", "valueType": "NUMBER", "decimals": 0, "sortOrder": 4},
+        {"name": "SGPT (ALT)", "unit": "U/L", "valueType": "NUMBER", "decimals": 0, "sortOrder": 5},
+        {"name": "Alkaline Phosphatase (ALP)", "unit": "U/L", "valueType": "NUMBER", "decimals": 0, "sortOrder": 6},
+        {"name": "Total Protein", "unit": "g/dL", "valueType": "NUMBER", "decimals": 1, "sortOrder": 7},
+        {"name": "Albumin", "unit": "g/dL", "valueType": "NUMBER", "decimals": 1, "sortOrder": 8},
+        {"name": "Globulin", "unit": "g/dL", "valueType": "NUMBER", "decimals": 1, "sortOrder": 9}
+      ]
+    },
+    {
+      "code": "KFT",
+      "name": "Kidney Function Tests",
+      "category": "Biochemistry",
+      "sampleType": "Blood-Serum",
+      "tatHours": 4,
+      "parameters": [
+        {"name": "Blood Urea Nitrogen (BUN)", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 1},
+        {"name": "Serum Creatinine", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 2, "sortOrder": 2},
+        {"name": "Uric Acid", "unit": "mg/dL", "valueType": "NUMBER", "decimals": 1, "sortOrder": 3},
+        {"name": "eGFR", "unit": "mL/min/1.73m²", "valueType": "NUMBER", "decimals": 0, "sortOrder": 4}
+      ]
+    },
+    {
+      "code": "ELECTRO",
+      "name": "Serum Electrolytes",
+      "category": "Biochemistry",
+      "sampleType": "Blood-Serum",
+      "tatHours": 4,
+      "parameters": [
+        {"name": "Sodium (Na+)", "unit": "mEq/L", "valueType": "NUMBER", "decimals": 0, "sortOrder": 1},
+        {"name": "Potassium (K+)", "unit": "mEq/L", "valueType": "NUMBER", "decimals": 1, "sortOrder": 2},
+        {"name": "Chloride (Cl-)", "unit": "mEq/L", "valueType": "NUMBER", "decimals": 0, "sortOrder": 3}
+      ]
+    },
+    {
+      "code": "TSH",
+      "name": "Thyroid Stimulating Hormone",
+      "category": "Thyroid",
+      "sampleType": "Blood-Serum",
+      "tatHours": 6,
+      "parameters": [
+        {"name": "TSH", "unit": "μIU/mL", "valueType": "NUMBER", "decimals": 2, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "T3",
+      "name": "Triiodothyronine (T3)",
+      "category": "Thyroid",
+      "sampleType": "Blood-Serum",
+      "tatHours": 6,
+      "parameters": [
+        {"name": "T3 (Total)", "unit": "ng/mL", "valueType": "NUMBER", "decimals": 2, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "T4",
+      "name": "Thyroxine (T4)",
+      "category": "Thyroid",
+      "sampleType": "Blood-Serum",
+      "tatHours": 6,
+      "parameters": [
+        {"name": "T4 (Total)", "unit": "μg/dL", "valueType": "NUMBER", "decimals": 2, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "HIV",
+      "name": "HIV I & II Antibody",
+      "category": "Serology",
+      "sampleType": "Blood-Serum",
+      "tatHours": 2,
+      "parameters": [
+        {"name": "HIV I & II", "unit": "", "valueType": "CHOICE", "choices": ["Reactive", "Non-Reactive"], "decimals": 0, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "HBSAG",
+      "name": "Hepatitis B Surface Antigen",
+      "category": "Serology",
+      "sampleType": "Blood-Serum",
+      "tatHours": 2,
+      "parameters": [
+        {"name": "HBsAg", "unit": "", "valueType": "CHOICE", "choices": ["Reactive", "Non-Reactive"], "decimals": 0, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "WIDAL",
+      "name": "Widal Test",
+      "category": "Serology",
+      "sampleType": "Blood-Serum",
+      "tatHours": 2,
+      "parameters": [
+        {"name": "Salmonella Typhi O (TO)", "unit": "titre", "valueType": "TEXT", "decimals": 0, "sortOrder": 1},
+        {"name": "Salmonella Typhi H (TH)", "unit": "titre", "valueType": "TEXT", "decimals": 0, "sortOrder": 2},
+        {"name": "Salmonella Paratyphi AO", "unit": "titre", "valueType": "TEXT", "decimals": 0, "sortOrder": 3},
+        {"name": "Salmonella Paratyphi AH", "unit": "titre", "valueType": "TEXT", "decimals": 0, "sortOrder": 4},
+        {"name": "Salmonella Paratyphi BH", "unit": "titre", "valueType": "TEXT", "decimals": 0, "sortOrder": 5}
+      ]
+    },
+    {
+      "code": "CRP",
+      "name": "C-Reactive Protein",
+      "category": "Serology",
+      "sampleType": "Blood-Serum",
+      "tatHours": 2,
+      "parameters": [
+        {"name": "CRP", "unit": "mg/L", "valueType": "NUMBER", "decimals": 1, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "URINE_RE",
+      "name": "Urine Routine and Microscopy",
+      "category": "Urine",
+      "sampleType": "Urine (Midstream)",
+      "tatHours": 2,
+      "parameters": [
+        {"name": "Colour", "unit": "", "valueType": "TEXT", "decimals": 0, "sortOrder": 1},
+        {"name": "Appearance", "unit": "", "valueType": "TEXT", "decimals": 0, "sortOrder": 2},
+        {"name": "pH", "unit": "", "valueType": "NUMBER", "decimals": 1, "sortOrder": 3},
+        {"name": "Specific Gravity", "unit": "", "valueType": "NUMBER", "decimals": 3, "sortOrder": 4},
+        {"name": "Protein", "unit": "", "valueType": "CHOICE", "choices": ["Nil", "Trace", "1+", "2+", "3+"], "decimals": 0, "sortOrder": 5},
+        {"name": "Glucose", "unit": "", "valueType": "CHOICE", "choices": ["Nil", "Trace", "1+", "2+", "3+"], "decimals": 0, "sortOrder": 6},
+        {"name": "Pus Cells (WBC)", "unit": "/hpf", "valueType": "TEXT", "decimals": 0, "sortOrder": 7},
+        {"name": "RBC", "unit": "/hpf", "valueType": "TEXT", "decimals": 0, "sortOrder": 8},
+        {"name": "Epithelial Cells", "unit": "/hpf", "valueType": "TEXT", "decimals": 0, "sortOrder": 9},
+        {"name": "Casts", "unit": "", "valueType": "TEXT", "decimals": 0, "sortOrder": 10}
+      ]
+    },
+    {
+      "code": "VIT_D",
+      "name": "Vitamin D (25-OH)",
+      "category": "Vitamins",
+      "sampleType": "Blood-Serum",
+      "tatHours": 24,
+      "parameters": [
+        {"name": "25-OH Vitamin D", "unit": "ng/mL", "valueType": "NUMBER", "decimals": 1, "sortOrder": 1}
+      ]
+    },
+    {
+      "code": "VIT_B12",
+      "name": "Vitamin B12",
+      "category": "Vitamins",
+      "sampleType": "Blood-Serum",
+      "tatHours": 24,
+      "parameters": [
+        {"name": "Vitamin B12", "unit": "pg/mL", "valueType": "NUMBER", "decimals": 0, "sortOrder": 1}
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "name": "Basic Health Check",
+      "tests": ["CBC", "FBS", "LFT"]
+    },
+    {
+      "name": "Diabetes Profile",
+      "tests": ["FBS", "PPBS", "HBA1C", "KFT"]
+    },
+    {
+      "name": "Fever Profile",
+      "tests": ["CBC", "WIDAL", "CRP"]
+    },
+    {
+      "name": "Thyroid Profile",
+      "tests": ["TSH", "T3", "T4"]
+    }
+  ]
+}

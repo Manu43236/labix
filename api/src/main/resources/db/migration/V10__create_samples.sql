@@ -1,0 +1,42 @@
+CREATE TABLE samples (
+    id              VARCHAR(36)     NOT NULL,
+    tenant_id       VARCHAR(36)     NOT NULL,
+    visit_id        VARCHAR(36)     NOT NULL,
+    sample_no       INT          NOT NULL,
+    barcode         VARCHAR(50),
+    sample_type     VARCHAR(50),
+    status          VARCHAR(15)  NOT NULL DEFAULT 'PENDING',
+    collected_by    VARCHAR(36),
+    collected_at    DATETIME(6),
+    received_by     VARCHAR(36),
+    received_at     DATETIME(6),
+    reject_reason   VARCHAR(300),
+    created_at      DATETIME(6),
+    updated_at      DATETIME(6),
+    created_by      VARCHAR(36),
+    updated_by      VARCHAR(36),
+    PRIMARY KEY (id),
+    UNIQUE KEY uk_sample_no (tenant_id, sample_no),
+    INDEX idx_sample_visit (visit_id),
+    INDEX idx_sample_barcode (tenant_id, barcode)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE collection_requests (
+    id              VARCHAR(36)     NOT NULL,
+    tenant_id       VARCHAR(36)     NOT NULL,
+    visit_id        VARCHAR(36)     NOT NULL,
+    address         TEXT         NOT NULL,
+    contact_phone   VARCHAR(15)  NOT NULL,
+    slot_start      DATETIME(6),
+    slot_end        DATETIME(6),
+    collector_id    VARCHAR(36),
+    status          VARCHAR(15)  NOT NULL DEFAULT 'REQUESTED',
+    notes           TEXT,
+    created_at      DATETIME(6),
+    updated_at      DATETIME(6),
+    created_by      VARCHAR(36),
+    updated_by      VARCHAR(36),
+    PRIMARY KEY (id),
+    UNIQUE KEY uk_cr_visit (visit_id),
+    INDEX idx_cr_tenant_collector (tenant_id, collector_id, status)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

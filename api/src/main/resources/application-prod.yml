@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    show-sql: false
+  datasource:
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 20000
+      idle-timeout: 300000
+
+logging:
+  level:
+    com.labix: INFO
+    org.springframework.security: WARN
+    org.hibernate: WARN
+    org.flywaydb: INFO
+  pattern:
+    console: "%d{ISO8601} [%X{requestId}] [%X{tenantId}] %-5level %logger{36} - %msg%n"
+
+management:
+  endpoint:
+    health:
+      show-details: when-authorized
+  endpoints:
+    web:
+      exposure:
+        include: health

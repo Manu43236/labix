@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand — from LABIX logo description */
+  --color-navy:   #1E3A5F;
+  --color-navy-light: #2A4E7F;
+  --color-teal:   #0D9488;
+  --color-teal-light: #14B8A6;
+  --color-green:  #16A34A;
+  --color-amber:  #D97706;
+  --color-red:    #DC2626;
+
+  /* Surface */
+  --color-bg:        #F8FAFC;
+  --color-surface:   #FFFFFF;
+  --color-border:    #E2E8F0;
+  --color-text:      #0F172A;
+  --color-muted:     #64748B;
+
+  /* Status chips */
+  --chip-pending-bg:    #FEF3C7;
+  --chip-pending-fg:    #92400E;
+  --chip-collected-bg:  #DBEAFE;
+  --chip-collected-fg:  #1E40AF;
+  --chip-received-bg:   #E0E7FF;
+  --chip-received-fg:   #3730A3;
+  --chip-entered-bg:    #F3E8FF;
+  --chip-entered-fg:    #6B21A8;
+  --chip-verified-bg:   #D1FAE5;
+  --chip-verified-fg:   #065F46;
+  --chip-released-bg:   #DCFCE7;
+  --chip-released-fg:   #15803D;
+  --chip-paid-bg:       #D1FAE5;
+  --chip-paid-fg:       #065F46;
+  --chip-due-bg:        #FEE2E2;
+  --chip-due-fg:        #991B1B;
+  --chip-partial-bg:    #FEF3C7;
+  --chip-partial-fg:    #92400E;
+
+  /* Flag colours */
+  --flag-critical-bg:  #FEE2E2;
+  --flag-critical-fg:  #991B1B;
+  --flag-high-bg:      #FEF3C7;
+  --flag-high-fg:      #92400E;
+  --flag-low-bg:       #DBEAFE;
+  --flag-low-fg:       #1E40AF;
+  --flag-normal-fg:    #15803D;
+
+  /* Spacing */
+  --sidebar-w: 240px;
+  --topbar-h:  56px;
+}
+
+@theme {
+  --color-navy: #1E3A5F;
+  --color-teal: #0D9488;
+}

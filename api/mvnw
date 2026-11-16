@@ -1,0 +1,24 @@
+#!/bin/sh
+# Maven Wrapper script
+set -e
+
+MAVEN_WRAPPER_JAR=".mvn/wrapper/maven-wrapper.jar"
+MAVEN_WRAPPER_PROPERTIES=".mvn/wrapper/maven-wrapper.properties"
+
+if [ -f "$MAVEN_WRAPPER_PROPERTIES" ]; then
+  DISTRIBUTION_URL=$(grep "distributionUrl" "$MAVEN_WRAPPER_PROPERTIES" | cut -d= -f2- | tr -d '\r')
+fi
+
+# Try to find mvn on PATH first
+if command -v mvn >/dev/null 2>&1; then
+  exec mvn "$@"
+fi
+
+# Fall back to downloading via wrapper jar if present
+if [ -f "$MAVEN_WRAPPER_JAR" ]; then
+  exec java -jar "$MAVEN_WRAPPER_JAR" "$@"
+fi
+
+echo "ERROR: Neither 'mvn' on PATH nor maven-wrapper.jar found."
+echo "Install Maven 3.9+ or run: mvn wrapper:wrapper"
+exit 1
